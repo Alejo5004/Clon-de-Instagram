@@ -1,0 +1,16 @@
+
+@media(max-width: 936px){
+    .posts, .profile{
+        max-width: auto;
+        margin: 0 20px;
+    }
+    main{
+        max-width: auto;
+    }
+}
+@media(max-width: 768px){
+    .posts{
+        grid-gap: 3px;
+        margin: 0;
+    }
+}

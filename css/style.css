@@ -1,0 +1,231 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #262626;
+}
+main{
+    max-width: 935px;
+    margin: auto;
+}
+figure{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    color: #003569;
+    text-decoration: #003569;
+}
+
+/* ---------------------------- header ----------------------- */
+
+header{
+    padding: 18px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 60px;
+}
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 215px 1fr;
+    max-width: 935px;
+    margin: auto;
+}
+
+.header-content-instagram{
+    display: grid;
+    align-self: center;
+    grid-template-columns: 44px 103px;
+    grid-gap: 20px;
+}
+.header-icon {
+    align-self: center;
+    border-right: 1px solid #262626;
+}
+.header-logo{
+    align-self: center;
+}
+
+.header-content-search{
+    height: 28px;
+    width: 215px;
+    display: grid;
+    grid-template-columns: 26px 189px;
+    align-self: center;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.search-icon{
+    align-self: center;
+    justify-self: center;
+}
+.search {
+    background-color: white;
+    border: none;
+    width: 187px;
+    outline: none;
+}
+
+.header-content-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 24px);
+    align-self: center;
+    justify-content: end;
+    grid-gap: 30px;
+}
+.nav-option{
+    justify-self: center;
+    align-self: center;
+}
+
+/* ---------------------------- section perfil ----------------------- */
+
+.profile{
+    max-width: 935px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px repeat(2, 150px) 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.profile-image{
+    /* grid-column: span 3 / 1 ; */
+    grid-row: span 3 / 1;
+    align-self: start;
+    justify-self: center;
+}
+.profile-image img{
+    border-radius: 50%;
+    border: 1px solid #ddd9d4;
+}
+.profile-content-nick, .profile-content-option, .profile-content-setting{
+    align-self: start;
+    justify-self: start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.profile-content-nick{
+    font-size: 24px;
+}
+.content-option-button, .content-option-suggestions{
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 5px 9px;
+}
+.content-option-button{
+    margin-right: 10px;
+}
+.content-option-suggestions {
+    cursor: pointer;
+}
+.profile-content-name, .profile-content-status{
+    align-self: center;
+    justify-self: start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.profile-content-name{
+    grid-column: span 3;
+    grid-row: 400px;
+}
+
+/* ---------------------------- section sugerencias (otros) ----------------------- */
+
+.others{
+    margin-top: 30px;
+    display: grid;
+    grid-template: 1fr / repeat(7, 1fr);
+}
+.others img{
+    border-radius: 50%;
+    width: 77px;
+    margin-bottom: 10px;
+}
+.other-content{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+/* ---------------------------- section navbar post ----------------------- */
+
+.navbar-post{
+    margin-top: 60px;
+    border-top: 1px solid grey;
+    display: grid;
+    grid-gap: 20px;
+    grid-template: 1fr / repeat(3, 1fr) ;
+}
+.item:nth-of-type(1){
+    justify-self: end;
+}
+.item:nth-of-type(3){
+    justify-self: start;
+}
+.item{
+    justify-self: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    color:#262626;
+    border-top: 1px solid #fafafa;
+}
+.item img{
+    width: 12px;
+    margin-right: 10px;
+}
+.item:hover{
+    border-top: 1px solid black;
+    color: black;
+}
+
+/* ---------------------------- section post ----------------------- */
+
+.posts{
+    padding-top: 10px;
+    max-width: 935px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 28px;
+}
+.post-content{
+    cursor: pointer;
+    position: relative;
+}
+.post-content-image img{
+    width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+.post-content-overly{
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.post-content:hover .post-content-overly{
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+}
+.post-content-likes, .post-content-comments{
+    width: 80px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
